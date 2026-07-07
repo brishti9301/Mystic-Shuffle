@@ -1,0 +1,57 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.input-section {
+  margin: 16px 0;
+}
+
+.card-area {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  gap: 18px;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.tarot-card {
+  width: 80px;
+  height: 120px;
+  border: 2px solid #d8c6ff;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #3d2b63, #1c1233);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 28px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.tarot-card:hover {
+  transform: translateY(-8px);
+}
+
+.tarot-card.revealed {
+  background: #f8f0d8;
+  color: #231633;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.result {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 24px;
+  border: 1px solid #d8c6ff;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+#resultMeaning {
+  line-height: 1.6;
+}
