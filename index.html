@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Mystic Shuffle ✨</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🔮 Mystic Shuffle</h1>
+
+        <p class="subtitle">
+            Ask your question, trust your intuition, and let the cards guide you.
+        </p>
+
+        <!-- Question -->
+        <div class="input-section">
+
+            <label for="questionInput">
+                Your Question
+            </label>
+
+            <textarea
+                id="questionInput"
+                rows="3"
+                placeholder="What would you like guidance about?"></textarea>
+
+        </div>
+
+        <!-- Category -->
+        <div class="input-section">
+
+            <label for="categoryInput">
+                Reading Category
+            </label>
+
+            <select id="categoryInput">
+
+                <option value="love">
+                    ❤️ Love & Relationships
+                </option>
+
+                <option value="career">
+                    💼 Money & Career
+                </option>
+
+                <option value="health">
+                    🌿 Health
+                </option>
+
+                <option value="spirituality">
+                    ✨ Spirituality
+                </option>
+
+            </select>
+
+        </div>
+
+        <!-- Buttons -->
+        <div class="button-group">
+
+            <button id="startButton">
+                Start Shuffling
+            </button>
+
+            <button id="stopButton" disabled>
+                Stop Shuffling
+            </button>
+
+        </div>
+
+        <!-- Deck Animation Area -->
+        <div id="deck" class="deck">
+
+            <img
+                src="assets/card-back.png"
+                alt="Tarot Card Back"
+                id="deckImage">
+
+        </div>
+
+        <!-- Three Cards Will Appear Here -->
+        <div id="cardArea" class="card-area">
+
+            <!-- JavaScript creates the cards here -->
+
+        </div>
+
+        <!-- Reading -->
+        <div id="result" class="result">
+
+            <h2>Your Reading</h2>
+
+            <h3 id="resultCardName"></h3>
+
+            <p id="resultMeaning"></p>
+
+        </div>
+
+    </div>
+
+    <script src="cards.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
